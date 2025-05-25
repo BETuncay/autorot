@@ -5,9 +5,27 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "google-api-python-client>=2.169.0",
+    "coqui-tts>=0.26.1",
+    "google-api-python-client>=2.170.0",
     "google-auth-oauthlib>=1.2.2",
+    "MarkupSafe==3.0.1",
     "matplotlib>=3.10.3",
-    "moviepy>=2.1.2",
-    "numpy>=2.2.6",
+    "moviepy>=2.2.1",
+    "praw>=7.8.1",
+    "sphinx>=8.2.3",
+    "sphinx-autodoc-typehints>=3.2.0",
+    "torch>=2.7.0",
+    "torchaudio>=2.7.0",
+    "torchvision>=0.22.0",
+    "transformers>=4.52.3",
 ]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

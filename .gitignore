@@ -1,9 +1,10 @@
 
-frames/
+docs/build/
+data/
 .vscode/
 .venv/
 
-client_secrets.json
+*.json
 *.mp4
 
 
